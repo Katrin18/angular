@@ -2,17 +2,19 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { CarsComponent } from './cars/cars.component';
-import { CarComponent } from './car/car.component';
+import {HttpClientModule} from '@angular/common/http';
+import { PostComponent } from './components/post/post.component';
+import { PostsComponent } from './components/posts/posts.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CarsComponent,
-    CarComponent
+    PostComponent,
+    PostsComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
